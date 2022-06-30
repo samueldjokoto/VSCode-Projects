@@ -1,0 +1,411 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "oswald-reg";
+  src: url("/Fonts/Oswald/Oswald-Regular.ttf");
+}
+
+@font-face {
+  font-family: "oswald-medium";
+  src: url("/Fonts/Oswald/Oswald-Medium.ttf");
+}
+
+@font-face {
+  font-family: "mukta";
+  src: url("/Fonts/Mukta-Light.ttf");
+}
+
+@font-face {
+  font-family: "bebas";
+  src: url("/Fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: "righteous";
+  src: url("/Fonts/Righteous-Regular.ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  max-width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+
+h1 {
+  font-size: 2.6;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.bk-container {
+  width: 100%;
+  height: 300%;
+  background: url(./Img/Frame\ 1-long.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  z-index: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  background-color: #eac5c5;
+  padding: 1rem 0;
+  margin: 0;
+  padding-top: 2rem;
+  /*-shadow: 0px 0px 3px gray;*/
+  scroll-snap-align: start;
+  z-index: 1;
+}
+
+nav ul {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 95%;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  letter-spacing: 1px;
+}
+
+nav ul li {
+  display: flex;
+  list-style: none;
+  position: sticky;
+  padding-right: 3rem;
+  letter-spacing: 2px;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+  font-family: "Poppins", "sans serif";
+  font-size: 2.5rem;
+}
+
+nav ul li a {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 45px;
+}
+
+nav ul li a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.btn {
+  font-size: 2rem;
+  font-family: "mukta", "sans serif";
+  margin-right: 4rem;
+  background: rgb(119, 190, 134);
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.btn:hover {
+  background: rgb(136, 218, 153);
+  font-size: 2.1rem;
+  color: white;
+}
+
+.content {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 8rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.content .info h2 {
+  color: #818b83;
+  font-size: 5rem;
+  font-weight: 800;
+  padding: 1rem 0;
+}
+
+.content .info p {
+  color: black;
+}
+
+.btn-info {
+  font-size: 2rem;
+  font-family: "mukta", "sans serif";
+  margin-right: 4rem;
+  background: rgb(119, 190, 134);
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  margin-top: 2rem;
+}
+
+.btn-info:hover {
+  background: rgb(136, 218, 153);
+  font-size: 2.1rem;
+  color: white;
+}
+
+.media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.media-icons a {
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: #83a189;
+  font-size: 2.5rem;
+  padding: 3rem;
+}
+
+.media-icons a:hover {
+  color: rgb(136, 218, 153);
+  font-size: 2.6rem;
+}
+
+.about {
+  display: flex;
+  max-width: 90%;
+  height: 100vh;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 8rem;
+  z-index: 0;
+}
+
+.about-container {
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+
+.about img {
+  width: 600px;
+  height: 500px;
+  padding-right: 5rem;
+  transition: 1s ease-in;
+}
+
+.text-container {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin: auto;
+  border-left: #83a189 solid 2px;
+  padding: 0rem 5rem;
+  transition: 1s ease-in;
+}
+
+.about h3 {
+  display: flex;
+  align-self: center;
+  color: #818b83;
+  font-size: 5rem;
+  font-weight: 800;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+.about p {
+  font-size: 2.1rem;
+}
+
+.about li {
+  display: flex;
+  list-style: none;
+  position: sticky;
+  letter-spacing: 1px;
+}
+
+.about li a {
+  display: flex;
+  cursor: pointer;
+  line-height: 45px;
+  color: black;
+  font-weight: 400;
+  background: rgb(119, 190, 134);
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  transition: 0.1s ease-in;
+}
+
+.about li a:hover {
+  color: white;
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  height: 100vh;
+  margin: auto;
+  z-index: 0;
+}
+
+.service h3 {
+  display: flex;
+  align-self: center;
+  color: #818b83;
+  font-size: 5rem;
+  font-weight: 800;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+.container .card .image {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background: #da9988;
+}
+
+.container .card .image img {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 3px;
+  border: 3px solid white;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background: white;
+  padding-bottom: 1rem;
+  margin: 20px 0;
+  width: 280px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: #da9988;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  z-index: 100;
+}
+
+.card .name-profession {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  color: #333;
+}
+
+.name-profession .name {
+  font-weight: 600;
+}
+
+.card .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.card .rating i {
+  font-size: 2rem;
+  margin: 0 2px;
+  color: #da9988;
+}
+
+.card .button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.card .button button {
+  background: #da9988;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background: #f3aa97;
+}

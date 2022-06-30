@@ -1,0 +1,20 @@
+
+// && = both must be true
+// || = if either are true - i.e. only one condition needs to be true 
+
+// console.log(product[summary])
+
+// for(field in product){
+//     // console.log(field, product[field]);
+//     console.log(`[data="${field}"]`)
+// }
+
+// document.querySelector(`[data="${field}"]`).innerText = product[field];
+
+
+
+            <div id="value-display" style="background-color: orange;">
+                ABC
+            </div>
+                <button onclick="changeBackground(this)" value="red">Red</button>
+                <button onclick="changeBackground(this)" value="Blue">Blue</button>

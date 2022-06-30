@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Homework Week3/styles.css">
+    <title>Homework</title>
+</head>
+<body>
+    <h1>Homework Week 3</h1>
+    <div id="homework">
+        <div class="container">
+            <div class="form">
+                <form id="form1">
+                <label for="firstname">Please Enter First Name:</label>
+                <input type="text" id="firstname">
+                <label for="lastname">Please Enter Last Name:</label>
+                <input type="text" id="lastname">
+                <button onclick="generateFullName();">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const formElement = document.getElementById('form');
+
+
+            function getName(firstName, lastName) {
+                return firstName + ' ' + lastName;
+            }
+
+            const name1 = getName("firstName", "lastName");
+            formElement.innerHTML = name1;
+
+    </script>
+</body>
+</html>

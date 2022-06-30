@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    },
+    {
+      "path": "D:\\React\\reactjs"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "VSCode Projects"
+  }
+}

@@ -1,0 +1,77 @@
+.main-head{
+    width: 95%;
+    margin: 0 0 0 auto;
+    position: relative;
+}
+
+nav{
+    @include flex(space-between, center, row);
+    min-height: 10vh;
+    width: 95%;
+    padding: 2rem 0rem;
+    flex-wrap: wrap;
+    .logo{
+        @include flex(flex-start, center,row);
+        flex: 1 1 20rem;
+        h1{
+            font-size: 3.5rem;
+            margin: 2rem;
+        }
+    }
+    ul{
+        @include flex(space-between, flex-end,row);
+        flex: 1 1 20rem;
+        .nav-links{
+            color: $gray-text
+            
+        }
+    }
+}
+
+.hero-section, .hero-section-beckground{
+    @include flex(space-between,center,column);
+    background: url(/Img/pexels-john-seldon-2098007.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10rem;
+    min-height: 90vh;
+    margin: 0 0 0 auto;
+    color:rgb(0, 0, 0);
+}
+    h2, h3{
+        margin: .3rem;
+        }
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 43%;
+        margin: 1.8rem;
+        background: white;
+}
+        
+.hero-section h2{
+    font-size: 8.5rem;
+}
+
+.hero-section h3{
+    font-size: 3.5rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover{
+    background-color:black;
+    color: white;
+    font-size: 2rem;
+}

@@ -1,0 +1,534 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "oswald-reg";
+  src: url("/Fonts/Oswald/Oswald-Regular.ttf");
+}
+
+@font-face {
+  font-family: "oswald-medium";
+  src: url("/Fonts/Oswald/Oswald-Medium.ttf");
+}
+
+@font-face {
+  font-family: "mukta";
+  src: url("/Fonts/Mukta-Light.ttf");
+}
+
+@font-face {
+  font-family: "bebas";
+  src: url("/Fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: "righteous";
+  src: url("/Fonts/Righteous-Regular.ttf");
+}
+
+html {
+  font-size: 62.5%;
+  --header1: calc(2rem +1vw);
+  --header2: calc(3.5rem +1vw);
+  --header3: calc(3rem +1vw);
+  --header4: calc(2.4rem +1vw);
+  --text: calc(1.5rem +1vw);
+  --big: calc(2.4rem +1vw);
+  --special-color: #906272;
+  --background-color: #414141;
+  --gray-text: #6d6d6d;
+}
+
+html,
+body {
+  max-width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+
+h1 {
+  font-size: var(--header1);
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: var(--text);
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+h3 {
+  font-size: var(--header3);
+}
+
+h4,
+h5 {
+  font-size: var(--header4);
+}
+
+ul {
+  list-style: none;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  width: 100%;
+  background: #f2e9e4;
+}
+
+.navbar {
+  display: inline-block;
+  position: sticky;
+  width: 100%;
+  min-height: auto;
+  z-index: 1;
+}
+
+#logo {
+  font-family: "oswald-medium", sans-serif;
+  font-size: 2.8rem;
+  font: bolder;
+  position: relative;
+}
+
+nav {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  width: 90%;
+  font-size: 1.4rem;
+  flex: 3 1 40rem;
+  font-family: sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  letter-spacing: 3px;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 45px;
+}
+
+nav li a:hover {
+  color: white;
+  font-size: 2rem;
+}
+
+nav .drop-menu {
+  display: inline-block;
+  flex-direction: column;
+
+  width: 20%;
+}
+
+.drop-menu li {
+  display: none;
+  width: 100%;
+  line-height: 30px;
+  flex-direction: column;
+  background-color: #f2e9e4;
+  border-right: rgba(112, 112, 112, 0.26) 3px solid;
+  border-bottom: rgba(112, 112, 112, 0.26) 3px solid;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.drop-menu li a:hover {
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  flex-direction: column;
+  background-color: #f2e9e4;
+  visibility: visible;
+  opacity: 1;
+}
+
+nav ul ul {
+  display: none;
+  position: fixed;
+  left: 68%;
+  top: 10%;
+}
+
+nav ul ul:hover {
+  display: block;
+}
+
+.search {
+  display: inline-block;
+  position: relative;
+  width: 13px;
+}
+
+.about {
+  width: 100%;
+  height: 90vh;
+}
+
+.about h2 {
+  font-size: 4rem;
+  font-family: "oswald-medium", sans-serif;
+  letter-spacing: 3px;
+}
+
+.about p {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.container1 {
+  margin-left: 5%;
+  margin-top: 2%;
+  float: left;
+  width: 42%;
+  height: 90%;
+  background: url(/Img/pexels-marcelo-chagas-1854897.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container2 {
+  display: grid;
+  margin-right: 5%;
+  margin-top: 2%;
+  float: right;
+  width: 42%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  background: #f2e9e4;
+}
+
+.container2 h2 {
+  align-items: center;
+  margin: auto;
+  margin-top: 10%;
+  padding-top: 5rem;
+}
+
+.container2 p {
+  align-items: center;
+  margin: 10%;
+  padding-bottom: 5rem;
+}
+
+.container2:hover {
+  background: rgb(170, 170, 170);
+}
+
+.button .chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  display: grid;
+  padding: 2rem 6rem;
+  background: black;
+  border: none;
+  width: 70%;
+  color: white;
+  font-size: 1.8rem;
+  margin-left: 9rem;
+  margin-bottom: 10rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  background: #f2e9e4;
+  font: bolder;
+  font-size: 2rem;
+  color: #414141;
+}
+
+.services {
+  padding: 1rem;
+  min-height: 30vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+}
+
+.services h2 {
+  padding: 1.5rem;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+}
+
+.cards img {
+  max-width: 100%;
+  margin: 2rem;
+}
+
+.card h2 {
+  font-size: 2rem;
+  font-family: "oswald-medium", sans-serif;
+  letter-spacing: 2px;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.card p {
+  font-size: 1rem;
+  font-family: sans-serif;
+  padding: 1.5rem;
+}
+
+.contact {
+  padding: 1rem;
+  height: 50vh;
+  margin: auto;
+  margin-top: 15rem;
+  display: flex;
+  background-color: #f2e9e4;
+  z-index: 0;
+}
+
+.text-box {
+  width: 30%;
+  height: 85%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-left: 10%;
+  background: white;
+  z-index: 1;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  font-family: "oswald-reg", sans-serif;
+  letter-spacing: 1px;
+  padding: 1rem;
+  margin-left: 16%;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  font-family: "oswald-reg", sans-serif;
+  letter-spacing: 2px;
+  padding: 1rem;
+}
+
+.contact button {
+  display: grid;
+  padding: 2rem 2rem;
+  background: black;
+  border: none;
+  width: 60%;
+  height: 20%;
+  margin-top: 10%;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact button:hover {
+  background: #585857;
+  font: bolder;
+  font-size: 2rem;
+  color: white;
+}
+
+.img-box {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  margin-right: 20%;
+  min-height: 60vh;
+  background: url(/Img/pexels-mudassir-ali-3577391.jpg);
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.abstract {
+  display: flex;
+  height: 90%;
+  max-width: 100%;
+}
+
+.contact img {
+  max-width: 80%;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  margin-top: 10%;
+  background-color: #f2e9e4;
+  padding: 70px;
+  height: 40vh;
+  font-family: "mukta", sans-serif;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  color: black;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -10px;
+  background-color: #e91e6279;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #838383;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: white;
+  padding-left: 10px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: white;
+  height: 45px;
+  width: 45px;
+}
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+    width: 100%;
+  }
+  #Logo {
+    padding: 2rem;
+  }
+  .container2 p {
+    font-size: 1.4rem;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+    height: 100%;
+  }
+}

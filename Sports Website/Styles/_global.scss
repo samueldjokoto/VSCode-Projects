@@ -1,0 +1,65 @@
+/*  Global Styles */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: $header1;
+}
+
+li, button, label, input, p, a{
+    font-size: $text;
+}
+h2{
+    font-size: $header2;
+}
+h3{
+    font-size: $header3;
+}
+h4, h5{
+    font-size: $header4;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: $gray-text;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover{
+    background-color:black;
+    color: white;
+    font-size: 2rem;
+}
+

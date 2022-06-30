@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles.css">
+    <title>Cart</title>
+</head>
+<body>
+    <article class="container">
+    <div class="cart">
+        <div class="cart-container">
+            <div class="img-container">
+            <img class="thumbnail" src="/Img/mens_t-shirt_basel_micro_modal_stretch_white_main.jpg-.jpg" alt="">
+            </div>
+            <div class="info-container">
+            <div id="item">
+            <div class="title">
+            <h2 data = "product-title">Product title</h2>
+            </div>
+            <h3 data="summary"></h3>
+            <div class="quantity-container">
+                <h4>Quantity</h4>        
+                <select data="quantity" oninput="numEntry(this.value)" name="quantity" id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <h4>Size</h4>
+                <select name="Size" oninput="sizeEntry(this.value)" id="size" data ="size">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+                <h4 id="item">Price:<span data ="price"></span></h4>
+            </div> 
+            <button id="addToCartButton" class="addTo-btn">Add to Basket <i class="fa-regular fa-square-plus"></i></button>
+            <button id="item" onclick="alert('You are now leaving this page')" class="checkout-btn">Checkout </button>
+            </div> 
+            </div>
+        </div>
+    </div>
+    <div id="shopping-cart-container">
+        <h2>Your Basket</h2>
+        <div id="shoppingCart"></div>
+        <button onclick="alert('You have removed this item from the cart.')" class="clear-btn">Remove Item  <i class="fa-regular fa-trash-can"></i></button>
+    </div>
+    </article>
+    <script src="/app.js"></script>
+</body>
+</html>

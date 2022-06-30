@@ -1,0 +1,204 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "poppins-bold";
+    src: url(./Fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "poppins-light";
+    src: url(./Fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: "poppins-reg";
+    src: url(./Fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins-semi";
+    src: url(./Fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "poppins-med";
+    src: url(./Fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "josefin-bold";
+    src: url(./Fonts/JosefinSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "josefin-semi";
+    src: url(./Fonts/JosefinSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "josefin-med";
+    src: url(./Fonts/JosefinSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "josefin-light";
+    src: url(./Fonts/JosefinSans-Light.ttf);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    max-width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.nft{
+    width: 100%;
+    height: 100%;
+    background: #AC2D2D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 362px;
+    height: 588px;
+    background:linear-gradient(#BB3B3B, #bb3b3ba1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(132, 132, 132, 0.086);
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1),20px 20px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 50px 50px 50px 50px;
+    margin: auto;
+    cursor: pointer;
+    transition: 200ms ease-in;
+}
+
+
+.card:hover {
+    background: #a52323;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.378),
+    0px 20px 20px rgba(0, 0, 0, 0.404);
+}
+
+.card h1:hover{
+    color: white;
+}
+
+.card h2:hover {
+    color: white;
+}
+
+.end-card h4:hover {
+    color: rgb(133, 133, 133);
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 1rem;
+}
+
+.card h1{
+    font-family: 'josefin-semi';
+    font-size: 20px;
+    color: #FF9E9E;
+    padding: 1rem 2rem;
+}
+
+.card h2{
+    font-family: 'josefin-light';
+    font-size: 16px;
+    color: #FF9E9E;
+    margin-left: 2rem;
+    width: 80%;
+}
+
+.price-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem;
+    justify-content: space-around;
+    color: white;
+    width: 100%;
+}
+
+.price-section img{
+    width: 20px;
+    height: 20px;
+}
+
+.price-section h3{
+    font-family: 'josefin-semi';
+    font-size: 14px;
+    color: #FFA7A7;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),
+    0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.price-section h4{
+    font-family: 'poppins-light';
+    font-size: 14px;
+}
+
+.eth{
+    display: flex;
+    flex-direction: row;
+    padding-right: 9rem;
+}
+
+.eth h3:hover{
+    color: white;
+}
+
+.clock {
+    display: flex;
+    flex-direction: row;
+}
+
+.clock h4{
+    padding-left: 0.5rem;
+}
+
+.end-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #D17272;
+    padding: 2rem;
+}
+
+.end-card h4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 11px;
+    color: white;
+    font-family: 'poppins-light';
+}
+
+.coded{
+    color: #FF9E9E;
+    padding: 0.5rem;
+}
+

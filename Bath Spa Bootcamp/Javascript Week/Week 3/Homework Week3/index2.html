@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>name goes below</h1>
+    <p id="demo"></p>
+
+    <script>
+
+        function getName (firstName, lastName) {
+
+            if(firstName === 'Mike')
+            document.getElementById('demo').style.color ="blue";
+
+            else(firstName !== 'Mike')
+            document.getElementById('demo').style.color ="red";
+            alert('WRONG NAME')
+
+           return firstName  + ' ' +  lastName;
+        }
+        
+        const fullName = getName('Mike', 'Tyson');
+        
+        document.getElementById('demo').innerHTML = fullName
+
+    </script>
+</body>
+</html>

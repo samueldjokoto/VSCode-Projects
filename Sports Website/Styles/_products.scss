@@ -1,0 +1,56 @@
+.products{
+    /* background: url(/Img/pexels-tatiana-syrikova-3968175.jpg);
+    background-repeat: no-repeat; */
+    background: white;
+    height: 100vh;
+}
+    .product-post{
+        padding-top: 6rem;
+    }
+    .shop-content{
+        @include flex( flex, center, column);
+        text-align: center;
+        width: 80%;
+        margin: 3rem 2rem;
+        box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    }
+    .shop-content.product-title{
+        padding: 2rem 0;
+
+    }
+
+    .shop-content span{
+        display: block;
+        padding-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .owl-nav{
+        position: absolute;
+        bottom: 0%;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .btn-products{
+        border: none;
+        border-radius: 2rem;
+        padding: 1rem 5rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        margin: 3rem;
+    }
+
+
+    .btn-products:hover{
+        background-color:black;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .container{
+        margin: 0 5vw;
+    }
+
+    

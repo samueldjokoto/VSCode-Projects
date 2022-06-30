@@ -1,0 +1,279 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "oswald-reg";
+  src: url("/Fonts/Oswald/Oswald-Regular.ttf");
+}
+
+@font-face {
+  font-family: "oswald-medium";
+  src: url("/Fonts/Oswald/Oswald-Medium.ttf");
+}
+
+@font-face {
+  font-family: "mukta";
+  src: url("/Fonts/Mukta-Light.ttf");
+}
+
+@font-face {
+  font-family: "bebas";
+  src: url("/Fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: "righteous";
+  src: url("/Fonts/Righteous-Regular.ttf");
+}
+
+html {
+  font-size: 62.5%;
+  --header1: calc(2rem +1vw);
+  --header2: calc(3.5rem +1vw);
+  --header3: calc(3rem +1vw);
+  --header4: calc(2.4rem +1vw);
+  --text: calc(1.5rem +1vw);
+  --big: calc(2.4rem +1vw);
+  --special-color: #906272;
+  --background-color: #414141;
+  --gray-text: #6d6d6d;
+}
+
+html,
+body {
+  max-width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: var(--header1);
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: var(--text);
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+h3 {
+  font-size: var(--header3);
+}
+
+h4,
+h5 {
+  font-size: var(--header4);
+}
+
+ul {
+  list-style: none;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "mukta", sans-serif;
+}
+
+h1 {
+  font-family: "bebas", sans-serif;
+}
+
+.main-head {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 auto;
+  border-bottom: #d5d5d5 1px solid;
+  z-index: 1;
+}
+
+.navbar {
+  display: inline-block;
+  position: sticky;
+  width: 80%;
+  min-height: auto;
+  z-index: 1;
+}
+
+nav {
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  box-shadow: black;
+}
+
+#logo {
+  position: relative;
+  padding: 0rem 6rem;
+  float: left;
+  font-size: 1.8rem;
+  margin-right: 8rem;
+}
+
+nav ul {
+  display: flex;
+  width: 68%;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  letter-spacing: 1px;
+}
+
+nav li a {
+  color: black;
+  text-decoration: none;
+}
+
+.hero img {
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+}
+
+.searchpanel {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  max-width: 680px;
+  height: 191px;
+  width: 100%;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #262637;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.inlinesearch {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.title {
+  font-size: 4rem;
+  color: #00deb6;
+}
+
+.sub-title {
+  font-size: 2.3rem;
+  color: white;
+}
+
+.inputfieldcontainer {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.inputfield-typeahead {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.sale,
+.rent {
+  background: #00deb6;
+  padding: 0rem 2rem;
+  transition-duration: 0.24s;
+  color: #53535f;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 7vh;
+  border: none;
+}
+
+.sale {
+  margin-left: 1rem;
+}
+
+.rent {
+  margin-left: 1rem;
+}
+
+.signin {
+  display: flex;
+  padding: 5rem 5rem;
+  width: 60%;
+  height: 30vh;
+  position: absolute;
+  right: 17.3%;
+  top: 60%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: rgb(223, 223, 223) solid 0.3px;
+  border-radius: 5px;
+}
+
+.signin-container {
+  font-size: 1.8rem;
+  align-items: center;
+}
+
+.container-text {
+  margin-bottom: 3rem;
+}
+
+.container-text p {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: -50%;
+  padding: 1rem;
+}
+
+.create {
+  margin-bottom: 2rem;
+  margin-top: 6rem;
+}
+
+.create,
+.sign {
+  position: relative;
+  left: -120%;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  display: grid;
+  flex-direction: column;
+  border: 2px solid #11828d;
+  background: white;
+  cursor: pointer;
+  border-radius: 5px;
+}

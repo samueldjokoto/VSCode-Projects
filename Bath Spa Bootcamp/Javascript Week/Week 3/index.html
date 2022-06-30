@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>javascript demo</h1>
+   <div id="box">
+       <p>box</p>
+   </div>
+   <button onclick="changeColor()">Click Me</button>
+
+<div id="boxtwo">
+    <p>box</p>
+</div>
+<button onclick="checkIfMonday()">Click Me</button>
+
+   <script>
+
+    const boxElement = document.getElementById('box');
+    function changeColor () {
+        boxElement.innerHTML = "Hello world - welcome to javascript"
+        document.getElementById('box').style.backgroundColor = "blue";
+        document.getElementById('box').style.color = "white";
+        }
+
+
+    let isMonday = true;
+    const allDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+    function checkIfMonday() {
+
+        const currentDate = new Date();
+        let day = currentDate.getDay();
+
+        if (day === 1) {
+            boxElement.innerHTML = 'It is Monday';
+        } else {
+            boxElement.innerHTML = 'It is NOT Monday';
+        }
+        document.getElementById('boxtwo').style.backgroundColor = "crimson";
+        document.getElementById('boxtwo').style.color = "white";
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins-reg";
+  src: url(./Fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-med";
+  src: url(./Fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-semi";
+  src: url(./Fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url(./Fonts/Poppins/Poppins-Bold.ttf);
+}
+
+html {
+  font-size: 62.5%;
+  --header1: calc(2rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(3rem + 1vw);
+  --header4: calc(2.4rem + 1vw);
+  --text: calc(0.5rem + 1vw);
+  --big-calc: calc(6rem + 1vw);
+  --special-color: #ea4fe7;
+  --special-color2: #bf35bc;
+  --special-gray: #333333;
+  --gray-text: #545454;
+  scroll-behavior: smooth;
+}
+
+#Logo h1 {
+  font-size: 3rem;
+}
+
+h1 {
+  font-size: var(--header1);
+}
+
+li,
+button,
+label,
+input,
+p,
+a {
+  font-size: var(--text);
+}
+h2 {
+  font-size: var(--header2);
+}
+h3 {
+  font-size: var(--header3);
+}
+h4,
+h5 {
+  font-size: var(--header4);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Poppins-reg", sans-serif;
+  animation: opening 1s ease-in-out;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Poppins-med", sans-serif;
+}
+
+/* Nav & Hero Section*/
+.container {
+  /*scroll-snap-type: y mandatory;*/
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.background {
+  width: 100%;
+  height: 95vh;
+  background: url(/Img/pexels-luis-quintero-1759531.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-head {
+  color: white;
+  font-family: "Poppins-reg", sans-serif;
+  font-size: 1rem;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  position: sticky;
+  padding: 0.5rem;
+  z-index: 1;
+}
+
+#Logo {
+  display: flex;
+  float: left;
+  padding: 1rem;
+  font-size: 2.5rem;
+  margin: auto;
+  font-family: "Poppins-semi", sans-serif;
+}
+
+nav {
+  position: sticky;
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
+  padding: 1rem;
+  scroll-snap-align: start;
+}
+
+nav ul {
+  position: sticky;
+  display: inline-block;
+  float: right;
+  font-family: "Poppins-med", sans-serif;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1 1 30rem;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  position: sticky;
+  padding-right: 6.5rem;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 30px;
+  font-size: 1.5rem;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hero {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  width: auto;
+  height: 70vh;
+  margin: 3rem;
+}
+
+.side-social {
+  display: flex;
+  position: absolute;
+  width: 10%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.vl {
+  display: flex;
+  position: absolute;
+  width: 10%;
+  margin: 10rem;
+  border-left: 1px solid white;
+  height: 150px;
+  top: 0%;
+}
+
+.socials ul {
+  display: flex;
+  position: relative;
+  margin: auto;
+  flex-direction: column;
+  margin: 8rem;
+}
+
+.socials ul li {
+  padding: 2rem;
+}
+
+.vl2 {
+  display: flex;
+  position: absolute;
+  width: 10%;
+  margin: 10rem;
+  border-left: 1px solid white;
+  height: 170px;
+  bottom: 5%;
+}
+
+.hero h2 {
+  font-size: 8rem;
+  font-family: "Poppins-semi", sans-serif;
+}
+
+.hero h3 {
+  position: absolute;
+  font-size: 4rem;
+  font-family: "Poppins-reg", sans-serif;
+  top: 55%;
+  left: 31.5%;
+}
+
+.burger,
+.menu-check {
+  display: none;
+}
+
+.containter-about {
+  height: 100vh;
+}
+
+.about {
+  width: 100%;
+  height: 90vh;
+}
+
+/* Mobile Responsive Section */
+
+@media screen and (max-width: 842px) {
+  .background {
+    width: 100%;
+    background: url(/Img/pexels-luis-quintero-1759531.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hero {
+    width: 100%;
+  }
+}
